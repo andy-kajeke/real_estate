@@ -1,6 +1,6 @@
 
 class RemoteConnections {
-  static final String BASE_URL = "https://app.birungifinanceltd.com/api/";
+  static final String BASE_URL = "http://192.168.124.22/api/";
 
   static final String CREATE_ACCOUNT_URL = BASE_URL + "register";
 
