@@ -38,6 +38,8 @@ class _MapScreenState extends State<MapScreen> {
   //   target: LatLng(_originLatitude, _originLongitude),
   //   zoom: 11.5,
   // );
+  
+  String API_KEY = "your_api_key";
 
   @override
   void initState() {
@@ -109,7 +111,7 @@ class _MapScreenState extends State<MapScreen> {
     List<LatLng> polylineCoordinates = [];
 
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-      "AIzaSyDNn5tPaFUYUa4GAve4hX3awXZqe1stUG0",
+      "API_KEY",
       PointLatLng(widget.fromLatitude, widget.fromLongitude),
       PointLatLng(widget.destLatitude, widget.destLongitude),
       travelMode: TravelMode.driving,
